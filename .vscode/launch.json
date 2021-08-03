@@ -1,0 +1,131 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run Satelital-CashFisico",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "PARTNER": "SATELITAL-CASHFISICO"
+            },
+            "args": [
+                "--timeout",
+                "9999999",
+                "--reporter",
+                "mochawesome",
+                "--recursive",
+                "--colors",
+                "${workspaceRoot}/features/*.js"
+            ],
+
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run PlayTheGame (PRD)",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "PARTNER": "PLAYTHEGAME-PRD"
+            },
+            "args": [
+                "--timeout",
+                "9999999",
+                "--reporter",
+                "mochawesome",
+                "--recursive",
+                "--colors",
+                "${workspaceRoot}/features/*.js"
+            ],
+          
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run Polishop (HML)",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "PARTNER": "POLISHOP-HML"
+            },
+            "args": [
+                "--timeout",
+                "9999999",
+                "--reporter",
+                "mochawesome",
+                "--recursive",
+                "--colors",
+                "${workspaceRoot}/features/*.js"
+                
+            ],
+          
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run PlayTheGame (HML)",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "PARTNER": "PLAYTHEGAME-HML"
+            },
+            "args": [
+                "--timeout",
+                "9999999",
+                "--reporter",
+                "mochawesome",
+                "--recursive",
+                "--colors",
+                "${workspaceRoot}/features/*.js"
+            ],
+          
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run WLC (HML)",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "PARTNER": "WLC-HML"
+            },
+            "args": [
+                "--timeout",
+                "9999999",
+                "--reporter",
+                "mochawesome",
+                "--recursive",
+                "--colors",
+                //"${workspaceRoot}/features/*.js"
+                "${workspaceRoot}/features/4-freightFeature.js"
+            ],
+          
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run IKE (HML)",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "PARTNER": "IKE-HML"
+            },
+            "args": [
+                "--timeout",
+                "9999999",
+                "--reporter",
+                "mochawesome",
+                "--recursive",
+                "--colors",
+                "${workspaceRoot}/features/*.js"
+                
+            ],
+          
+            "internalConsoleOptions": "openOnSessionStart"
+        },       
+    ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "generic-supplier-partner-api-test",
+  "version": "1.0.0",
+  "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "grunt": "^1.3.0",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.1.1",
+    "properties-reader": "^2.1.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "gruntplugin",
+    "grunt",
+    "saucelabs",
+    "test",
+    "mocha"
+  ],
+  "scripts": {
+    "catalogoFeature": "set ENVIRONMENT=polishop && mocha --timeout 100000000 --recursive features/catalogoFeature.js --reporter mochawesome",
+    "disponivelFeature": "set ENVIRONMENT=polishop && mocha --timeout 100000000 --recursive features/disponivelFeature.js --reporter mochawesome",
+    "freteFeature": "set ENVIRONMENT=polishop && mocha --timeout 100000000 --recursive features/freteFeature.js --reporter mochawesome",
+    "pedidoFeature": "set ENVIRONMENT=polishop && mocha --timeout 100000000 --recursive features/pedidoFeature.js --reporter mochawesome --grep--",
+    "availabilityFeature": "set ENVIRONMENT=polishop && mocha --timeout 100000000 --recursive features/availabilityFeature.js --reporter mochawesome --grep--"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://grupoltm.visualstudio.com/Premiacao/_git/generic-supplier-partner-api-test"
+  },
+  "author": "",
+  "license": "ISC"
+}
